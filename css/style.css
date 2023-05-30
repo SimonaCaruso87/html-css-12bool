@@ -16,29 +16,71 @@ body{
     font-family: 'Montserrat', sans-serif;     
 }
 
+/************************************************
+     CUSTOM PROPERTIES
+ ************************************************/
+
+ :root{
+ 
+    /* COLOR BACKGROUND*/
+   
+       --first-color:#006CFA;
+       --second-color:#00E165;
+   
+    /* COLOR TEXT */ 
+   
+       --first-text:#FFFFFF;
+       /* --second-text:white;
+       --third-text:#6A6A6A; */
+   }
+   
  /************************************************
      UTILITIES
   ************************************************/
  
  /* LAYOUT */
 
- /* .my-container{
-    max-width: 1200px;
-    margin: 0 auto;
- } */
-
+ 
  /************************************************
      SITE SECTIONS
   ************************************************/
 
- /*  MAIN CONTENT  */
+ /*  EXERCISE 1 */
+.container {
+    background-color:var(--first-text);
+    height: 100vh;
+    margin: 1px 0px;
+    font-size: 10px;
+    color: white;
+}
+
+.row{
+  background-color: var(--first-color);
+  height: 8%; 
+  margin:1px;
+}
+
+[class*="col-"]:not(.green-container){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-container{
+    padding: 10px;
+}
+
+.div .col{
+    color: white;
+}
 
 
 
+/*  EXSERCISE 2 */
 
 
 
- /*  FOOTER  */
+ /*  EXSERCISE 3  */
 
 /************************************************
     SOLUZIONE RESPONSIVE-MEDIA-QUERY MOBILE-FIRST
@@ -86,26 +128,27 @@ body{
         DEBUG
      *************************************************/
     
-     .debug #main-content,
-     .debug #main-content > aside,
-     .debug #main-content > main,
-     .debug footer{
-         border:2px dashed red;
-    }
-
-    .debug #main-content{
-        background-color: lightcoral;
-    }
-
     
-    .debug #main-content > aside {
-        background-color: aqua;
-    }
-        
-    .debug footer{
-        background-color: aquamarine;
+    .debug .container .col-1,
+    .debug .container .col-2:not(.nested),
+    .debug .container .col-3,
+    .debug .container .col-4,
+    .debug .container .col-5,
+    .debug .container .col-6:not(.nested),
+    .debug .container .col-7,
+    .debug .container .col-8:not(.nested),
+    .debug .container .col-9,
+    .debug .container .col-10,
+    .debug .container .col-11,
+    .debug .container .col-12{
+        border-left:2px solid white;
     }
 
-    .debug footer > *{
-        background-color: purple;
+
+
+
+    .debug .nested{
+        background-color: var(--second-color);
+        padding:5px;
+        border-left:2px solid var(--first-color);
     }
