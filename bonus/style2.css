@@ -1,0 +1,17 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: blue;
+    height: 500px;
+
+}
+
+.row{
+    margin: 1px;
+    border-color: aqua;
+}
+
