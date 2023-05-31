@@ -1,17 +1,16 @@
-*{
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-.container{
-    background-color: blue;
-    height: 500px;
-
-}
+/* .container{
+    
+} */
 
 .row{
-    margin: 1px;
-    border-color: aqua;
+    height: 10px;
+    background-color: blue;
 }
 
+
+.col1{
+    background-color: black;
+    height: 10px;
+    width: 10px;
+}
