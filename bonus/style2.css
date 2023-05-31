@@ -8,12 +8,25 @@
 } */
 
 .row{
-    height:500px;
     background-color: lightcoral;
+    height: 1rem;
 }
 
 
 .col1{
     background-color: black;
-    height:2rem;
+    height: 1rem;
+    border:1px solid pink;
+}
+
+.red{
+    background-color:#FB0D1B;
+}
+
+.yellow{
+    background-color: #EA9F22;
+}
+
+.green{
+    background-color: #6B6D00;
 }
